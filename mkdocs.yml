@@ -28,7 +28,8 @@ theme:
       accent: lime
 nav:
   - Home: index.md
-  - About: about.md
+  - FDS: fds.md
+  - DM: dm.md
 
 extra:
   social:
@@ -42,7 +43,7 @@ markdown_extensions:
       generic: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: 
+      emoji_generator:
   - footnotes
   - pymdownx.snippets:
       check_paths: true
