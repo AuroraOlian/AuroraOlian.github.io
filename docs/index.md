@@ -27,13 +27,3 @@ def myfunction():
 ```
 
 ## Icons and Emojis
-
-<!-- :smile: -->
-
-<!-- :smile: :+1: :rocket: :tada: :100: -->
-<!-- 
-:fontawesome-solid-rocket:
-
-:fontawesome-solid-thumbs-up:
-<!--  -->
-:fontawesome-brands-twitter:{ .twitter }
