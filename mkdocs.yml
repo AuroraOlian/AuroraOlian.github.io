@@ -1,40 +1,126 @@
-site_name: AuroraOlian
+# Project information
+site_name: AuroraOlian's Notebook
+site_author: AuroraOlian
+site_url: https://auroraolian.github.io
+site_description: Sharing my notes and thoughts on computer science and technology.
+
+# Repository
+repo_name: AuroraOlian.github.io
+repo_url: https://auroraolian.github.io
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2024 <a href="https://github.com/AuroraOlian/AuroraOlian.github.io" target="_blank" rel="noopener">Aurora Olian</a>
+
+# Configuration
 theme:
   name: material
+  language: zh
+  # custom_dir: overrides
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - toc.integrate
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
     - content.code.copy
-  language: en
-
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-    - scheme: slate
-      toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-5
         name: Switch to light mode
-      primary: teal
-      accent: lime
-nav:
-  - Home: index.md
-  - FDS: fds.md
-  - DM: dm.md
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-3
+        name: Switch to system preference
+  icon:
+    # logo: material/pac-man
+    logo: octicons/paper-airplane-16
+    repo: fontawesome/brands/github-alt
+    admonition:
+      info: fontawesome/solid/anchor
+      note: fontawesome/solid/pen-nib
+      abstract: fontawesome/solid/list
+      tip: fontawesome/solid/lightbulb
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: material/alien
+      danger: fontawesome/solid/virus
+      bug: fontawesome/solid/robot
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/link
+  font:
+    text: Roboto
+    # text: LXGW WenKai Screen GB Screen # Share Tech
+    code: JetBrains Mono
+  favicon: favicon.ico
+
+plugins:
+  - blog
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  # - minify:
+  #     minify_html: true
+  # - statistics:
+      # words_per_minute: 200
+  # - git-revision-date-localized:
+  #     type: datetime
+  #     timezone: Asia/Shanghai
+  #     locale: zh
+  #     enable_creation_date: true
+  #     exclude:
+  #       - index.md
+        # - coming.md
+        # - link.md
+        # - tech_accu/index.md
+        # - cour_note/index.md
+        # - pape_read/index.md
+        # - others/index.md
+  # - tags:
+  #     tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
+  #       kwds:
+  #         case: lower
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/shortcuts.js
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -50,7 +136,12 @@ markdown_extensions:
       url_download: false
       url_max_size: 33554432
       url_timeout: 10
-  - pymdownx.superfences
   - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
-copyright: Copyright &copy; 2024 <a href="https://github.com/AuroraOlian/AuroraOlian.github.io" target="_blank" rel="noopener">Aurora Olian</a>
+nav:
+  - Home: index.md
+  - FDS: fds.md
+  - DM: dm.md

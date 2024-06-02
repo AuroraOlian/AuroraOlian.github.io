@@ -1,5 +1,3 @@
-# 0 Introduction
-
 ## Link
 
 [Other’s Notes(Perfect!)](https://oneko.zone/zju/dm/ch6/#simple-properties)
@@ -30,9 +28,24 @@ $$\exists x (P(x)\vee Q(x)) \equiv \exists x P(x) \vee \exists x Q(x) $$
 
 _Literal:_ P or $\neg$P
 
-> [!caution]+
+> [!note]
+
+!!! note
+
+> **note**
+
+```note dsahji
+sadho
+```
+
+::: note
+
+!!! caution
+      Negation must behind atomic proposition rather than compound proposition.
+      $\neg$p Ture | $\neg$(p$\wedge$q) False
+<!-- > [!caution]+
 > Negation must behind atomic proposition rather than compound proposition.
-> $\neg$p Ture | $\neg$(p$\wedge$q) False
+> $\neg$p Ture | $\neg$(p$\wedge$q) False -->
 
 disjunctions/conjunctions with one or more literals as disjuncts/conjuncts called disjunctive/conjunctive clauses
 A conjunction with one or more disjunctive clauses as its conjuncts is said to be in conjunctive normal form(CNF):

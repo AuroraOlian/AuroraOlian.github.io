@@ -7,7 +7,7 @@
 > [!tldr] Link
 > [other's error set](https://www.cnblogs.com/Sun-Wind/p/15771420.html)
 
-# Stack 栈
+## Stack 栈
 
 - [1] push & pop
 
