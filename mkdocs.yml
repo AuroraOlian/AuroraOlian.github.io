@@ -145,3 +145,5 @@ nav:
   - Home: index.md
   - FDS: fds.md
   - DM: dm.md
+  - DS: distributed_system.md
+  - Raft: raft.md

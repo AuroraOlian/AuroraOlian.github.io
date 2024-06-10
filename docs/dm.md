@@ -30,12 +30,14 @@ _Literal:_ P or $\neg$P
 
 > [!note]
 
-!!! note
 
-> **note**
 
-```note dsahji
-sadho
+```ad-note 主要内容
+collapse: open
+三大类数据结构
+~~~c
+#include <stdio.h>
+~~~
 ```
 
 ::: note
