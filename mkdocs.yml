@@ -146,4 +146,6 @@ nav:
   - FDS: fds.md
   - DM: dm.md
   - DS: distributed_system.md
+  - GFS: GFS.md
+  - MapReduce: MapReduce.md
   - Raft: raft.md
