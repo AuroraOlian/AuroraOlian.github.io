@@ -84,7 +84,6 @@ theme:
   font:
     text: Roboto
     # text: JetBrains Mono, LXGW WenKai Screen GB Screen
-    # text: LXGW WenKai Screen GB Screen # Share Tech
     code: JetBrains Mono
   favicon: img/favicon.ico
 
@@ -121,6 +120,8 @@ extra:
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
 extra_javascript:
   - javascripts/shortcuts.js
   - javascripts/mathjax.js
@@ -188,8 +189,11 @@ nav:
           - dm/index.md
           - dm/1.md
           - dm/2.md
+          - dm/3.md
           - dm/4.md
+          - dm/5.md
           - dm/6.md
+          - dm/8.md
           - dm/9.md
           - dm/10.md
           - dm/11.md

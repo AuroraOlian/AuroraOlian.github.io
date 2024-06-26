@@ -9,9 +9,10 @@
 
 !!! info
 
-    I have marked some places with "extra" to indicate that I will complete them later
+    - I have marked some places with "extra" to indicate that I will complete them later
+    - In order to adapt to teaching and examinations, most of the notes are in English
 
-!!! success "Recommend"
+!!! success "Other Recommended Notes"
 
     + [Oneko Zone's notes](https://oneko.zone/zju/dm/)
     + [kaleo's notes](https://www.yuque.com/linguisty/zju_courses/discrete)
