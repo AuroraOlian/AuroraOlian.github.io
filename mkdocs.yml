@@ -25,7 +25,7 @@ theme:
     - content.code.copy
     # - content.code.select
     # - content.footnote.tooltips
-    # - content.tabs.link
+    - content.tabs.link
     - content.tooltips
     # - header.autohide
     # - navigation.expand
@@ -83,9 +83,10 @@ theme:
       quote: fontawesome/solid/link
   font:
     text: Roboto
+    # text: JetBrains Mono, LXGW WenKai Screen GB Screen
     # text: LXGW WenKai Screen GB Screen # Share Tech
     code: JetBrains Mono
-  favicon: favicon.ico
+  favicon: img/favicon.ico
 
 plugins:
   - blog
@@ -94,7 +95,7 @@ plugins:
   # - minify:
   #     minify_html: true
   # - statistics:
-      # words_per_minute: 200
+  # words_per_minute: 200
   # - git-revision-date-localized:
   #     type: datetime
   #     timezone: Asia/Shanghai
@@ -102,12 +103,12 @@ plugins:
   #     enable_creation_date: true
   #     exclude:
   #       - index.md
-        # - coming.md
-        # - link.md
-        # - tech_accu/index.md
-        # - cour_note/index.md
-        # - pape_read/index.md
-        # - others/index.md
+  # - coming.md
+  # - link.md
+  # - tech_accu/index.md
+  # - cour_note/index.md
+  # - pape_read/index.md
+  # - others/index.md
   # - tags:
   #     tags_slugify: !!python/object/apply:pymdownx.slugs.slugify
   #       kwds:
@@ -119,33 +120,81 @@ extra:
       link: https://github.com/
 extra_css:
   - stylesheets/extra.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 extra_javascript:
   - javascripts/shortcuts.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 markdown_extensions:
+  - admonition
+  # Annotations
+  - attr_list # Annotations, Buttons, Icons, Emojis
+  - md_in_html
+  - pymdownx.superfences # Annotations, Code blocks
+  # Code blocks
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator:
-  - footnotes
   - pymdownx.snippets:
       check_paths: true
       url_download: false
       url_max_size: 33554432
       url_timeout: 10
-  - attr_list
-  - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  # Content tabs
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  # Data tables
+  - tables
+  # Diagrams
+  # Footnotes
+  - footnotes
+  # Formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Icons, Emojis
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # Lists
+
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
 
 nav:
   - Home: index.md
-  - FDS: fds.md
-  - DM: dm.md
-  - DS: distributed_system.md
-  - GFS: GFS.md
-  - MapReduce: MapReduce.md
-  - Raft: raft.md
+  - core curriculum:
+      - Fundamentals of Data Structure:
+          - fds.md
+      - Discreate Mathematics and Its Application:
+          - dm/index.md
+          - dm/1.md
+          - dm/2.md
+          - dm/4.md
+          - dm/6.md
+          - dm/9.md
+          - dm/10.md
+          - dm/11.md
+  - distributed system:
+      - Basic Theorem: distributed_system.md
+      - GFS: GFS.md
+      - MapReduce: MapReduce.md
+      - Raft: raft.md
