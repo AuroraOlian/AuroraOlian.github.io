@@ -15,7 +15,7 @@ copyright: Copyright &copy; 2024 <a href="https://github.com/AuroraOlian/AuroraO
 # Configuration
 theme:
   name: material
-  language: zh
+  language: en
   # custom_dir: overrides
   features:
     - announce.dismiss
