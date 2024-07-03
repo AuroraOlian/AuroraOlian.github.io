@@ -82,8 +82,7 @@ theme:
       example: fontawesome/solid/flask
       quote: fontawesome/solid/link
   font:
-    text: Roboto
-    # text: JetBrains Mono, LXGW WenKai Screen GB Screen
+    text: 'LXGW WenKai Screen R'
     code: JetBrains Mono
   favicon: img/favicon.ico
 

@@ -15,4 +15,4 @@ This notebook is a collection of notes, articles, tutorials, and other resources
 
 ## Why English?
 
-writing in English forces me to practice my English skills, which is something I want to improve. But I'm not a native English speaker, so hopefully you'll forgive any mistakes I make. I hope you'll find my writing clear and easy to understand. 😊
+Writing in English forces me to practice my English skills, which is something I want to improve. But I'm not a native English speaker, so hopefully you'll forgive any mistakes I make. I hope you'll find my writing clear and easy to understand. 😊
