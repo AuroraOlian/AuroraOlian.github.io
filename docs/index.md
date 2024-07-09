@@ -15,4 +15,8 @@ This notebook is a collection of notes, articles, tutorials, and other resources
 
 ## Why English?
 
-Writing in English forces me to practice my English skills, which is something I want to improve. But I'm not a native English speaker, so hopefully you'll forgive any mistakes I make. I hope you'll find my writing clear and easy to understand. 😊
+Writing in English forces me to practice my English skills, which is something I want to improve. But I'm not a native English speaker, so hopefully you'll forgive any mistakes I make. I hope you'll find my writing clear and easy to understand. 🫡
+
+## Some Statement
+
+Some notes are directly `Ctrl C/V` from Obsidian or Notion, so there might be some formatting issues. I'll try to fix them as soon as possible. 🥰
