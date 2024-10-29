@@ -65,7 +65,6 @@ theme:
         icon: material/brightness-3
         name: Switch to system preference
   icon:
-    # logo: material/pac-man
     logo: octicons/paper-airplane-16
     repo: fontawesome/brands/github-alt
     admonition:
@@ -114,8 +113,8 @@ plugins:
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/AuroraOlian/
 extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
@@ -181,10 +180,10 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - core curriculum:
+  - Core curriculum:
       - Fundamentals of Data Structure:
           - fds.md
-      - Discreate Mathematics and Its Application:
+      - Discrete Mathematics and Its Application:
           - dm/index.md
           - dm/1.md
           - dm/2.md
@@ -196,10 +195,10 @@ nav:
           - dm/9.md
           - dm/10.md
           - dm/11.md
-  # - distributed system:
-  #     - Basic Theorem: distributed_system.md
-  #     - GFS: GFS.md
-  #     - MapReduce: MapReduce.md
-  #     - Raft: raft.md
+  - Distributed System:
+      - Basic Theorem: ds/distributed_system.md
+      - GFS: ds/GFS.md
+      - MapReduce: ds/MapReduce.md
+      - Raft: ds/raft.md
   - CTF:
     - ctf/prototype_pollution.md

@@ -382,4 +382,4 @@ During the sorting, processing every element which is not yet at its final posit
 ## LRU(Lease Recent Used)
 
 支持 get 和 put 操作
-[待做的 LFU](https://leetcode.cn/problems/lfu-cache/description/)(什么时候想做了再做吧)
+[待做的 LFU](https://leetcode.cn/problems/lfu-cache/description/)
