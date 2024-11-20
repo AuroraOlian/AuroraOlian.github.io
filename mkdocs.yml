@@ -6,7 +6,7 @@ site_description: Sharing my notes and thoughts on computer science and technolo
 
 # Repository
 repo_name: AuroraOlian.github.io
-repo_url: https://auroraolian.github.io
+repo_url: https://github.com/AuroraOlian/AuroraOlian.github.io
 edit_uri: edit/main/docs/
 
 # Copyright
@@ -202,3 +202,5 @@ nav:
       - Raft: ds/raft.md
   - CTF:
     - ctf/prototype_pollution.md
+  - Slides:
+      - "🔗beautiful sequence": https://courses.zjusec.com/slides/beautiful_sequence/
