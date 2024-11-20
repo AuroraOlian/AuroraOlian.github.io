@@ -75,8 +75,8 @@ By 32nd Group
 
 ## Find all subsequences
 
-<!-- <img src="./beautiful_sequence/backtracking.png" width="40%" style="float: right; margin-right: 100px"/> -->
-<img src="./beautiful_sequence/backtracking.png" width="35%" style="margin-left: 280px"/>
+<!-- <img src="./assets/backtracking.png" width="40%" style="float: right; margin-right: 100px"/> -->
+<img src="./assets/backtracking.png" width="35%" style="margin-left: 280px"/>
 
 <!--v-->
 
@@ -143,7 +143,7 @@ bool checkSequence(const vector<int> &seq, int diff)
 dp[i] = \sum_{j=0}^{i-1} \begin{cases}2^j&\text{if}\left|a_i-a_j\right|\leq m\\dp[j]&\text{if}\left|a_i-a_j\right|> m\end{cases}\mod\text{MOD}
 $$ -->
 
-![alt text](beautiful_sequence/state_transition.png)
+![alt text](assets/state_transition.png)
 
 For each element `arr[i]`, check all prior elements `arr[j]` where `j < i`.
 
@@ -191,7 +191,7 @@ The problem has overlapping subproblems because the subsequences ending at i ove
 
 ## Binary Inverted Tree
 
-<img src="./beautiful_sequence/BIT.png" width="25%" style="float: right; margin-right: 30px"/>
+<img src="./assets/BIT.png" width="25%" style="float: right; margin-right: 30px"/>
 
 The **Binary Indexed Tree (BIT)**, also known as a **Fenwick Tree**, is a powerful data structure used for efficiently managing **prefix sums** and supporting **dynamic updates** and **range queries**.
 
@@ -208,7 +208,7 @@ int lowbit(int x) { return x & (-x); }
 
 ## Add / Update
 
-<img src="./beautiful_sequence/BIT_add.png" width="25%" style="float: right; margin-right: 50px"/>
+<img src="./assets/BIT_add.png" width="25%" style="float: right; margin-right: 50px"/>
 
 Add value to arr[pos] and update the BIT
 
@@ -226,7 +226,7 @@ void add(int pos, vector<int> &arr, int value)
 
 ## Query
 
-<img src="./beautiful_sequence/BIT_query.png" width="25%" style="float: right; margin-right: 50px"/>
+<img src="./assets/BIT_query.png" width="25%" style="float: right; margin-right: 50px"/>
 
 Compute the sum of the range [1, idx].
 
@@ -338,8 +338,8 @@ int DP_ugly_v2(const vector<int> &sequence, int diff)
 
 Since the time complexity of the backtracking algorithm is relatively high, it reaches the level of seconds when the data size is around 20. Therefore, when testing the efficiency of the backtracking method, we limited the data size to a very small range.
 
-<img src="./beautiful_sequence/223542.png" width="100%" style="margin-left: 25px"/>
-<!-- ![alt text](beautiful_sequence/223542.png) -->
+<img src="./assets/223542.png" width="100%" style="margin-left: 25px"/>
+<!-- ![alt text](assets/223542.png) -->
 
 <!--v-->
 
@@ -349,13 +349,13 @@ Since the time complexity of the backtracking algorithm is relatively high, it r
 unsuitable for larger inputs.
 - The dynamic programming solutions show a clear improvement over backtracking algorithm.
 
-<img src="./beautiful_sequence/BTDP.png" width="60%" style="margin-left: 200px"/>
+<img src="./assets/BTDP.png" width="60%" style="margin-left: 200px"/>
 
 <!--v-->
 
 **Comparison between all DP algorithms**
 
-<img src="./beautiful_sequence/223353.png" width="80%" style="margin-left: 100px"/>
+<img src="./assets/223353.png" width="80%" style="margin-left: 100px"/>
 
 <!--v-->
 
@@ -363,7 +363,7 @@ unsuitable for larger inputs.
 
 The cost time of all different versions of DP shown in the line chart is: DP_ugly_v2 $\approx$ DP_v4 < DP_v3 $\approx$ DP_ugly_v2 $\approx$ DP_v2 < DP_v1. The DP_ugly_v2 is themost efficient algorithm among all the algorithms
 
-<img src="./beautiful_sequence/DP.png" width="70%" style="margin-left: 170px"/>
+<img src="./assets/DP.png" width="70%" style="margin-left: 170px"/>
 
 <!--s-->
 

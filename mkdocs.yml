@@ -203,4 +203,5 @@ nav:
   - CTF:
     - ctf/prototype_pollution.md
   - Slides:
-      - "🔗beautiful sequence": https://courses.zjusec.com/slides/beautiful_sequence/
+      - slides/index.md
+      - "🔗beautiful sequence": slides/beautiful_sequence/static/index.html
