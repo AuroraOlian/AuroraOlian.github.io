@@ -204,4 +204,3 @@ nav:
     - ctf/prototype_pollution.md
   - Slides:
       - slides/index.md
-      - "🔗beautiful sequence": slides/beautiful_sequence/static/index.html
